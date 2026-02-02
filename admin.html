@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - DBBScripter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Admin Panel</h2>
+    <form id="admin-login">
+        <input type="password" id="admin-pass" placeholder="Enter admin password">
+        <button type="submit" class="glow-btn">Login</button>
+    </form>
+    <div id="admin-panel" style="display:none;">
+        <h3>Upload New Video</h3>
+        <input type="text" placeholder="Title"><br>
+        <input type="file" accept=".mp4"><br>
+        <input type="file" accept=".funscript" multiple><br>
+        <input type="text" placeholder="Video Link (optional)"><br>
+        <button class="glow-btn">Upload</button>
+        <hr>
+        <h3>Edit/Delete Videos</h3>
+        <!-- List videos with edit/delete options -->
+    </div>
+    <script>
+    document.getElementById('admin-login').onsubmit = function(e){
+        e.preventDefault();
+        if(document.getElementById('admin-pass').value === 'wikxam-zuZmyw-cefcu1'){
+            document.getElementById('admin-panel').style.display = 'block';
+            this.style.display = 'none';
+        } else {
+            alert('Incorrect password');
+        }
+    };
+    </script>
+</body>
+</html>
