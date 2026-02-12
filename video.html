@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Player - DBBScripter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Video Title</h2>
+    <video src="videos/example.mp4" controls></video>
+    <label for="funscript-select">Choose FUNSCRIPT:</label>
+    <select id="funscript-select">
+        <option value="funscripts/script1.funscript">Script 1</option>
+        <option value="funscripts/script2.funscript">Script 2</option>
+		<option value="funscripts/script3.funscript">Script 3</option>
+		<option value="funscripts/script4.funscript">Script 4</option>
+		<option value="funscripts/script5.funscript">Script 5</option>
+    </select>
+    <div id="device-connect">
+        <input type="text" placeholder="Enter interactive code">
+        <button class="glow-btn">Connect</button>
+    </div>
+    <div id="public-link" style="display:none;">
+        <a href="https://publicvideolink.com" class="glow-btn">Watch Public Version</a>
+    </div>
+    <script>
+    // Show public link if device not connected
+    // Implement device connection logic here
+    </script>
+</body>
+</html>
